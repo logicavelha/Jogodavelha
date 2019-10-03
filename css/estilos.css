@@ -1,0 +1,83 @@
+*{  /* usamos ele para resetar as margens e os padding */
+	margin: 0; /* significa margens colocamos em 0 para resertar*/
+	padding: 0;/* e a distancia entre o conteudo de um elemento e suas bordas ele server pra definir a distancia pra cada lado e resetamos*/
+}
+body{
+	background-color:#000;
+	background-size: 650px;
+
+	}/*colocamos a cor de fundo na cor preta pra isso usamos background-color e #000 que e preto*/ 
+
+@keyframes cor_fonte{ /* usamos essa tag para dar nome a algum conteudo, onde salvamos a cores que queriamos que se repeti-se com o nome de cor-fonte*/
+	10%{color: #0ff}/* queremos que no intervalo apareça a cor azul*/
+	35%{color: #BEF781}/*quando a animação chegar em 25% ficar na cor rosa*/
+	60%{color: #fff;}/*quando a animação chegar em 50% ficar na cor vermelha*/
+	85%{color: #e0eb1c}/*quando a animação chegar em 75% ficar na cor azul*/
+	
+}
+@keyframes brilho{ /* usamos a tag kayframes pra ajusta o brilho */
+50%{text-shadow: 0px 0px 5px} /*ultilizamos isso para falar que quando a animação chegar em 50% ela tenha um foco */
+}
+section{ /* estamos modificando a sessão*/
+	width: 650px; /* usamos isso para definir a largura da area de um conteudo,colocamos em 450 pixel de um elemento a area fica dentro do preenchimento da bor e mar.*/
+	margin: 170px auto;/* e a margem onde colocamos em 170px automatico serve para centralizar horizontalmente o elemento em seu contêiner*/
+	color: #3F3;/*colocamos na cor verde usando o #3f3*/
+animation-duration: 8s;/* aqui colocamos pra a duração da animação durar 8 segundos */
+animation-name: cor_fonte;/* usamos esse codigo para usar a configurações que fizemos no keyframes acima e colocamos o nome de cor_fonte*/
+animation-iteration-count: infinite;/* aqui colocamos para a animação se repetir quantas vezes quiser*/
+}
+h1{ /*vamos modificar o h1 agora */
+	margin-left: 20px;
+	text-align: center; /* usamos essa tag para centralizar o h1*/
+	font-size: 70px;/* usamos isso para definir o tamanho do texto e colocamos em 50 pixel*/
+	font-family: "Sans-serif";/*usamos essa tag pra declara a fonte na qual usamos*/
+	animation-duration: 8s;/* usamos essa tag pra falar que a duração da animação vai ser de 8segundos*/
+	animation-name: cor_fonte;/* essa tag e para inserir conteudo que criamos no keyframes, ai colocamos o nome que criamos la e para funciona*/
+	animation-iteration-count: infinite;/* essa tag e pra a animação se repetir quantas vezes quiser*/
+}
+h2{/*vamos modicar o h2 agora */
+	
+	text-align: center;/* usamos para centralizar o h2*/
+	font-size: 70px;/* usamos essa tag para centralizar o h2*/
+	font-family: "Sans-serif";/* essa tag e pra declara a fonte que estamos usando*/
+	animation-duration: 8s;/* usamos essa tag pra que a animação tenha a duração de 8segundo*/
+	animation-name: cor_fonte;/* essa tag e para inserir o conteudo que criamos no keyframes, ultizando o nome que criamos la*/
+	animation-iteration-count: infinite;/* essa tag e para a animação se repetir quantas vezes quiser*/
+}
+header{ /* vamos modificar a sessão hearder */
+width: 100px;/*usamos isso para definir a largura da area de um conteudo, colocamos em 100 pixel, de um elemento a area fica dentro do preenchimentro da bor e mar*/
+    margin: 25px auto;/* colocamos a margem em 25 pixel automatico serve para para centralizar horizontalmente o elemento em seu contêiner*/
+    color: #3F3;/*colocamos na cor ver*/
+    animation-duration: 8s;/* colocamos para a animação durar 8 segundos*/
+animation-name: cor_fonte;/* e o conteudo que criamos no keyframes, e para inserir so colcoar o nome */
+animation-iteration-count: infinite;/*e que a animação dure quantas vezes quiser*/
+}
+ul{ /* vamos o ul */
+	display: inline-block;
+list-style-type: none;/* essa tag serve para escolhemos o tipo de lista que vamos usar*/
+font-size: 25px;/* colocamos que o tamanho do texto tenha 18 pixel*/
+text-align: center;/* aqui estamos centralizando o texto*/
+font-family: "Sans-serif";/*esta tag declara a fonte que estamos usando*/
+animation-duration: 2s;/*colocamos que a animação do brilho dure 2 segundo*/
+animation-name: brilho;/* aqui e o conteudo que criamos no keyframes para o brilho, e colocamos o nome dele de brilho mesmo*/
+animation-iteration-count: infinite;/* a animação do brilho se repita quantas vezes quiser*/
+
+}
+li a{ /* vamos configura a tag ul, na tag a que são os botões*/
+    background-color: rgb(105,110,108);
+    text-decoration:none;/*essa tag serve para decora o texto e com none fala que o texto nao vai ter decoração ex:ele não vai ta sublinado*/
+    color:#fff;/*colocamos para ter a cor branca*/
+    display: inline-block;/*essa tag serve para falar o tipo de caixa do arquivo e essa e para O elemento gera uma caixa de elemento de bloco que fluirá com o conteúdo circundante, como se fosse uma única caixa embutida (se comportando como um elemento substituído)*/
+    padding: 10px 15px;/* colocamos que a distancia dele pra borda seja de 10 pixel por 15 pixel*/
+    margin: 15px 10px;/* que a margem dele seja de 15 pixel por 10 pixel*/
+    border: 2px dotted #5efc03;/* aqui e onde criamos uma borda e especificamos o tamanho em 1 pixel e na cor branca*/
+    border-radius: 25px 25px;/*aqui estamos falando do raio dela onde colocamos 25pixel por 25 pixel*/
+	
+}
+
+a:hover{ /* vamos fazer uma modificação uma colocamo o a com efeito de butão*/
+    background:#fff;/* quando colocamos o mouse encima do a fica com o fundo branco*/
+    color:#000;/*quando colocamos o mouse encima do a fica com as letras preta*/
+    box-shadow:#fff/*usamos essa tag pra aficionar algumas sombras branca*/
+}    
+

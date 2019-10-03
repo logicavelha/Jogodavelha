@@ -1,0 +1,40 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	
+	background-repeat: no-repeat;
+	background-size: 1990px;
+}
+h1{
+	color: #fff;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	font-size: 60px
+}
+h2{
+	color: #fff;
+	margin-bottom: 50px;
+	font-size: 30px;
+	text-align: center;
+}
+
+ul li{
+	color: #fff;
+	font-size: 30px;
+	font-family: "Sans-serif";
+	margin-bottom: 25px;
+	text-align: center;
+}
+img{
+	margin-left:840px;
+}
+ ul a{
+	text-decoration: none;
+	color: rgb(0,255,255);
+	font-size:30px;
+	padding: 20px;
+	font-family: "Sans-serif";
+}
